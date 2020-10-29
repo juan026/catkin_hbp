@@ -1,0 +1,18 @@
+string model_name                    # name of Gazebo Model
+---
+string parent_model_name             # parent model
+string canonical_body_name           # name of canonical body, body names are prefixed by model name, e.g. pr2::base_link
+string[] body_names                  # list of bodies, body names are prefixed by model name, e.g. pr2::base_link
+string[] geom_names                  # list of geoms
+string[] joint_names                 # list of joints attached to the model
+string[] child_model_names           # list of child models
+string[] sensor_names		     # list of sensor names
+string[] sensor_types                # list of sensor types
+string[] sensor_names_ROS            # list of sensor names with ROS Plugins
+string[] rostopic_sensor_urls        # list of RosTopic sensors
+string[] sensor_ros_message_type     # list of sensor ROS message types
+string[] rostopic_actuator_urls      # list of actuator ROS topics
+string[] actuator_ros_message_type   # list of actuator ROS message types
+bool is_static                       # returns true if model is static
+bool success                         # return true if get successful
+string status_message                # comments if available

@@ -1,0 +1,8 @@
+string model_name                               # name of Gazebo Model
+string sensor_name                              # name of sensor
+---
+string type_noise                               # type of noise model
+float64  mean                                   # mean value of gaussian model
+float64  std_dev                                # standard deviation of gaussian model
+bool success                                    # return true if get successful
+string status_message                           # comments if available
