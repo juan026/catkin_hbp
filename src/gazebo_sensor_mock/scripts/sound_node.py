@@ -6,10 +6,10 @@ from std_msgs.msg import String
 from math import floor
 import random
 
-sound_sources = [('bicycle', Point(-10, 10, 0)),
-                      ('car', Point(5, -5, 0)),
-                      ('cat', Point(3, -3, 0)),
-                      ('dog', Point(10, 0, 0)) ]
+sound_sources = [('bicycle_bell.wav', Point(-10, 10, 0)),
+                      ('car_horn.wav', Point(5, -5, 0)),
+                      ('cat_meow.wav', Point(3, -3, 0)),
+                      ('dog_bark_x.wav', Point(10, 0, 0)) ]
 
 def pub_sound():
     pub = rospy.Publisher('sounds', SoundWithSource, queue_size=10)
