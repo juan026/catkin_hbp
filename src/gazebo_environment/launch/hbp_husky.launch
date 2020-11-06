@@ -1,4 +1,4 @@
 <launch>
-  <node name="gazebo" pkg="gazebo_ros" type="gazebo" respawn="false" output="screen" args="/home/eloy/Development/catkin_hbp/src/gazebo_environment/worlds/husky_world.sdf" />
+  <node name="gazebo" pkg="gazebo_ros" type="gazebo" respawn="false" output="screen" args="$(find gazebo_environment)/worlds/husky_world.sdf" />
   <node name="sound_node" pkg="gazebo_sensor_mock" type="sound_node.py" />
 </launch>
